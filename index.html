@@ -12,58 +12,45 @@
     <title>ПОКОС</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrap">
-                <div class="header__wrap__left">
-                    <a href="index.html" class="logo">
-                        <img src="img/header/logo.svg" alt="logo">
-                    </a>
-                    <div class="header__wrap__left__menu">
-                        <div class="header__wrap__left__menu__nav">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <p>Виды покоса</p>
-                    </div>
+    <header class="header container">
+        <div class="header__left">
+            <a href="index.html" class="logo">
+                <img src="img/header/logo.svg" alt="logo">
+            </a>
+            <div class="header__left__menu">
+                <div class="header__left__menu__nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="header__wrap__right">
-                    <a href="tel:+79220000000">Заказать звонок</a>
-                    <p>8 922 000 00 00</p>
-                </div>
+                <p>Виды покоса</p>
             </div>
-            <!-- /.header__wrap -->
         </div>
-        <!-- /.container -->
+        <div class="header__right">
+            <a href="tel:+79220000000">Заказать звонок</a>
+            <p>8 922 000 00 00</p>
+        </div>
     </header>
     <!-- /.header -->
-    <section class="promo">
-        <div class="container">
-            <div class="promo__wrap">
-                <div class="promo__wrap__block">
-                    <h1>Профессиональный 
-                        Покос травы в кирове </h1>
-                    <p>Кирове и в 60 км от города </p>
-                    <span>i</span>
-                </div>
-                <div class="form">
-                    <h3>Заказать звонок</h3>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="tel" placeholder="+7 (___) ___-__-__">
-                    <button type="submit">Отправить</button>
-                    <a href="#">Политика концедициальности</a>
-                </div>
-            </div>
-            <!-- /.promo__wrap -->
+    <section class="promo container">
+        <div class="promo__block">
+            <h1>Профессиональный 
+                Покос травы в кирове </h1>
+            <p>Кирове и в 60 км от города </p>
+            <span>i</span>
         </div>
-        <!-- /.container -->
+        <div class="form">
+            <h3>Заказать звонок</h3>
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="+7 (___) ___-__-__">
+            <button type="submit">Отправить</button>
+            <a href="#">Политика концедициальности</a>
+        </div>
     </section>
     <!-- /.promo -->
-    <section class="price">
-        <div class="container">
-            <h2 class="section-title">Цены на покос травы</h2>
-            <div class="price__wrap">
+    <section class="price container">
+        <h2 class="section-title">Цены на покос травы</h2>
+        <div class="price__wrap">
                 <div>
                     <img src="img/price/weeds.png" alt="weeds">
                     <p>Покос бурьяна тримером</p>
@@ -119,12 +106,41 @@
                     </span>
                     <button>Подробнее</button>
                 </div>
-            </div>
-            <!-- /.price__wrap -->
         </div>
-        <!-- /.container -->
+        <!-- /.price__wrap -->
     </section>
     <!-- /.price -->
+    <section class="work container">
+        <div class="work__block">
+            <h2 class="work__title">Как мы работаем</h2>
+            <p>– Выкашеваем участки от 5 соток</p>
+            <p>– Закажи покос и получи оперативную и качествееную работу</p>
+            <h3>Три простых шага до покоса</h3>
+            <div class="work__block__card">
+                <div>
+                    <img class="work__block__card__msg" src="img/work/msg.svg" alt="msg">
+                    <p class="work__block__card__msg__text">Консультация</p>
+                </div>
+                <div>
+                    <img class="work__block__card__pocos" src="img/work/pocos.svg" alt="pocos">
+                    <p class="work__block__card__pocos__text">Покос</p>
+                </div>
+                <div>
+                    <img class="work__block__card__money" src="img/work/money.svg" alt="money">
+                    <p class="work__block__card__money__text">Прием работ и оплата</p>
+                </div>
+            </div>
+        </div>
+        <div class="form form__work">
+            <h3>Остались вопросы?</h3>
+            <p><b>Заполните форму!</b></p>
+            <p>И получите консультацию специалиста</p>
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+            <button type="submit">Заказать звонок</button>
+        </div>
+    </section>
+    <!-- /.work container -->
     <script src="js/main.js" defer></script>
 </body>
 </html>

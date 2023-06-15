@@ -47,14 +47,12 @@ h1, h2, h3, h4, h5, h6
     text-transform: uppercase
     font-family: 'Oswald', sans-serif
     font-weight: 700
-    color: $dark
 
 p, a
     font-size: 1.5rem
 
 .container
-    width: 120rem
-    margin: 0 auto
+    padding: 0 4rem
 
 .logo
     width: 20.4rem
@@ -63,8 +61,8 @@ p, a
 .form
     display: flex
     flex-direction: column
-    align-items: center
-    width: 50rem
+    text-align: center
+    width: 48rem
     padding: 4.15rem 4.8rem
     background-color: $light
     border-radius: 0.3rem
@@ -73,16 +71,40 @@ p, a
         font-weight: 700
         font-size: 20px
         line-height: 30px
-        margin-bottom: 1.5rem
+        margin-bottom: 3rem
     & > input
-        width: 37.8rem
+        width: 100%
         height: 6rem
     & > button
         margin: 1.5rem 0
-        width: 37.8rem
+        width: 100%
         height: 6rem
     & > a
         color: $darkSecond
+    &__work
+        background-color: $workCard
+        margin-left: 1.8rem
+        padding: 6.7rem 5.95rem 3.36rem 5.95rem
+        & > h3 
+            margin-bottom: 5.9rem
+            text-align: center
+        & > p
+            margin-bottom: 1.4rem
+            text-align: left
+            &:nth-child(3)
+                margin-bottom: 4rem
+        & > input
+            border: none
+            background-color: $primary
+            color: $light
+            height: 7.2rem
+            &:nth-child(1)
+                margin-top: 3.6rem
+            &::placeholder
+                color: $light
+        & > button
+            height: 7.4rem
+            margin: 0
 
 .section
     &-title
@@ -95,7 +117,7 @@ p, a
             position: absolute
             width: 0.6rem
             height: 3.4rem
-            top: 50%                    
+            top: 51.5%                      
             left: 0
             transform: translate(0, -50%) 
-            background-color: $primary            
+            background-color: $primary         

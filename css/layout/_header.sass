@@ -1,56 +1,56 @@
 .header
-    padding: 2.2rem 0
-    &__wrap
+    padding-top: 2.2rem
+    padding-bottom: 2.2rem
+    display: flex
+    justify-content: space-between
+    &__left, &__right
         display: flex
+        align-items: center
         justify-content: space-between
-        &__left, &__right
+        width: 40%
+    &__left
+        &__menu
             display: flex
             align-items: center
-            justify-content: space-between
-            width: 40%
-        &__left
-            &__menu
+            position: relative
+            &__nav
+                width: 3.8rem
+                height: 2rem
                 display: flex
-                align-items: center
-                position: relative
-                &__nav
+                flex-wrap: wrap
+                align-content: space-between
+                cursor: pointer
+                & > span
+                    display: block
                     width: 3.8rem
-                    height: 2rem
-                    display: flex
-                    flex-wrap: wrap
-                    align-content: space-between
-                    cursor: pointer
-                    & > span
-                        display: block
-                        width: 3.8rem
-                        border: 0.1rem solid $primary
-                        border-radius: 5rem
-                &::after
-                    content: ''
-                    position: absolute
-                    width: 0.05rem
-                    height: 4.1rem
-                    top: -50%
-                    left: -40%
-                    background-color: rgba($dark, 0.1)
-                & > p
-                    color: $primary
-                    margin-left: 2rem
-        &__right
-            display: flex
-            justify-content: flex-end
-            & > a
-                color: $primary
-                margin-right: 4rem
+                    border: 0.1rem solid $primary
+                    border-radius: 5rem
+            &::after
+                content: ''
+                position: absolute
+                width: 0.05rem
+                height: 4.1rem
+                top: -50%
+                left: -40%
+                background-color: rgba($dark, 0.1)
             & > p
-                position: relative
-                font-weight: 700
-                padding-left: 2.7rem
-                &::after
-                    content: ''
-                    position: absolute
-                    top: 0
-                    left: 0
-                    width: 1.7rem
-                    height: 1.7rem
-                    background: url(../img/header/phone.svg) no-repeat center / 1.7rem
+                color: $primary
+                margin-left: 2rem
+    &__right
+        display: flex
+        justify-content: flex-end
+        & > a
+            color: $primary
+            margin-right: 4rem
+        & > p
+            position: relative
+            font-weight: 700
+            padding-left: 2.7rem
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 1.7rem
+                height: 1.7rem
+                background: url(../img/header/phone.svg) no-repeat center / 1.7rem

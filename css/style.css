@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  color: #000000;
 }
 
 p, a {
@@ -67,8 +66,7 @@ p, a {
 }
 
 .container {
-  width: 120rem;
-  margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .logo {
@@ -79,8 +77,8 @@ p, a {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50rem;
+  text-align: center;
+  width: 48rem;
   padding: 4.15rem 4.8rem;
   background-color: #FFFFFF;
   border-radius: 0.3rem;
@@ -90,19 +88,54 @@ p, a {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 .form > input {
-  width: 37.8rem;
+  width: 100%;
   height: 6rem;
 }
 .form > button {
   margin: 1.5rem 0;
-  width: 37.8rem;
+  width: 100%;
   height: 6rem;
 }
 .form > a {
   color: #333333;
+}
+.form__work {
+  background-color: #27AE60;
+  margin-left: 1.8rem;
+  padding: 6.7rem 5.95rem 3.36rem 5.95rem;
+}
+.form__work > h3 {
+  margin-bottom: 5.9rem;
+  text-align: center;
+}
+.form__work > p {
+  margin-bottom: 1.4rem;
+  text-align: left;
+}
+.form__work > p:nth-child(3) {
+  margin-bottom: 4rem;
+}
+.form__work > input {
+  border: none;
+  background-color: #219653;
+  color: #FFFFFF;
+  height: 7.2rem;
+}
+.form__work > input:nth-child(1) {
+  margin-top: 3.6rem;
+}
+.form__work > input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.form__work > input::placeholder {
+  color: #FFFFFF;
+}
+.form__work > button {
+  height: 7.4rem;
+  margin: 0;
 }
 
 .section-title {
@@ -116,106 +149,63 @@ p, a {
   position: absolute;
   width: 0.6rem;
   height: 3.4rem;
-  top: 50%;
+  top: 51.5%;
   left: 0;
   transform: translate(0, -50%);
   background-color: #219653;
 }
 
-.header {
-  padding: 2.2rem 0;
+@media (min-width: 535.98px) {
+  .container {
+    padding: 0 calc(50% - 21.25rem);
+  }
 }
-.header__wrap {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 767.98px) {
+  .container {
+    padding: 0 calc(50% - 28.8rem);
+  }
 }
-.header__wrap__left, .header__wrap__right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 40%;
+@media (min-width: 991.98px) {
+  .container {
+    padding: 0 calc(50% - 38.4rem);
+  }
 }
-.header__wrap__left__menu {
-  display: flex;
-  align-items: center;
-  position: relative;
+@media (min-width: 1199.98px) {
+  .container {
+    padding: 0 calc(50% - 49.6rem);
+  }
 }
-.header__wrap__left__menu__nav {
-  width: 3.8rem;
-  height: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  cursor: pointer;
+@media (min-width: 1439.98px) {
+  .container {
+    padding: 0 calc(50% - 60rem);
+  }
 }
-.header__wrap__left__menu__nav > span {
-  display: block;
-  width: 3.8rem;
-  border: 0.1rem solid #219653;
-  border-radius: 5rem;
-}
-.header__wrap__left__menu::after {
-  content: "";
-  position: absolute;
-  width: 0.05rem;
-  height: 4.1rem;
-  top: -50%;
-  left: -40%;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.header__wrap__left__menu > p {
-  color: #219653;
-  margin-left: 2rem;
-}
-.header__wrap__right {
-  display: flex;
-  justify-content: flex-end;
-}
-.header__wrap__right > a {
-  color: #219653;
-  margin-right: 4rem;
-}
-.header__wrap__right > p {
-  position: relative;
-  font-weight: 700;
-  padding-left: 2.7rem;
-}
-.header__wrap__right > p::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1.7rem;
-  height: 1.7rem;
-  background: url(../img/header/phone.svg) no-repeat center/1.7rem;
-}
-
 .promo {
   background: url(../img/promo/bg.png) no-repeat center/cover;
   position: relative;
-}
-.promo__wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 4.85rem 0;
+  padding-top: 4.85rem;
+  padding-bottom: 4.85rem;
 }
-.promo__wrap__block {
+.promo__block {
   z-index: 5;
 }
-.promo__wrap__block > h1 {
+.promo__block > h1 {
   font-size: 4.4rem;
   line-height: 6.5rem;
   color: #FFFFFF;
   width: 47rem;
 }
-.promo__wrap__block > p {
+.promo__block > p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #FFFFFF;
   margin: 1.2rem 0 2rem 0;
 }
-.promo__wrap__block > span {
+.promo__block > span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +217,7 @@ p, a {
   line-height: 2.6rem;
   cursor: pointer;
 }
-.promo__wrap::before {
+.promo::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -238,7 +228,8 @@ p, a {
 }
 
 .price {
-  padding: 7.8rem 0 8.5rem 0;
+  padding-top: 7.8rem;
+  padding-bottom: 8.8rem;
 }
 .price__wrap {
   display: flex;
@@ -312,4 +303,183 @@ p, a {
   background-color: rgba(145, 151, 147, 0.2);
   color: #219653;
   cursor: pointer;
+}
+
+.header {
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header__left, .header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.header__left__menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__left__menu__nav {
+  width: 3.8rem;
+  height: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  cursor: pointer;
+}
+.header__left__menu__nav > span {
+  display: block;
+  width: 3.8rem;
+  border: 0.1rem solid #219653;
+  border-radius: 5rem;
+}
+.header__left__menu::after {
+  content: "";
+  position: absolute;
+  width: 0.05rem;
+  height: 4.1rem;
+  top: -50%;
+  left: -40%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.header__left__menu > p {
+  color: #219653;
+  margin-left: 2rem;
+}
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__right > a {
+  color: #219653;
+  margin-right: 4rem;
+}
+.header__right > p {
+  position: relative;
+  font-weight: 700;
+  padding-left: 2.7rem;
+}
+.header__right > p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url(../img/header/phone.svg) no-repeat center/1.7rem;
+}
+
+.work {
+  background-color: #219653;
+  padding-top: 6.7rem;
+  padding-bottom: 6.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+.work__title {
+  font-size: 3.4rem;
+  line-height: 5rem;
+  padding-left: 2rem;
+  margin-bottom: 4.6rem;
+  position: relative;
+  color: #FFFFFF;
+}
+.work__title::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 3.4rem;
+  top: 51.5%;
+  left: 0;
+  transform: translate(0, -50%);
+  background-color: #FFFFFF;
+}
+.work__block > p {
+  margin-bottom: 1rem;
+}
+.work__block > h3 {
+  margin: 6.1rem 0 7.6rem 0;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+.work__block__card {
+  display: flex;
+}
+.work__block__card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 22.2rem;
+  height: 22.2rem;
+  border-radius: 0.3rem;
+  background-color: #27AE60;
+}
+.work__block__card > div:not(:nth-child(3n)) {
+  margin-right: 1.8rem;
+}
+.work__block__card > div:nth-child(1)::before {
+  content: "1";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.2rem;
+  width: 1.2rem;
+  height: 3rem;
+  font-family: "Oswald";
+  font-size: 2.2rem;
+  color: #219653;
+}
+.work__block__card > div:nth-child(2)::before {
+  content: "2";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.2rem;
+  width: 1.2rem;
+  height: 3rem;
+  font-family: "Oswald";
+  font-size: 2.2rem;
+  color: #219653;
+}
+.work__block__card > div:nth-child(3)::before {
+  content: "3";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.2rem;
+  width: 1.2rem;
+  height: 3rem;
+  font-family: "Oswald";
+  font-size: 2.2rem;
+  color: #219653;
+}
+.work__block__card > div > p {
+  width: 14rem;
+  font-weight: 700;
+  text-align: center;
+}
+.work__block__card__msg {
+  width: 9.176rem;
+  height: 9.176rem;
+}
+.work__block__card__msg__text {
+  margin-top: 2.8rem;
+}
+.work__block__card__pocos {
+  width: 7.92rem;
+  height: 7.92rem;
+}
+.work__block__card__pocos__text {
+  margin-top: 3.8rem;
+}
+.work__block__card__money {
+  width: 8.8rem;
+  height: 8.8rem;
+}
+.work__block__card__money__text {
+  margin-top: 2.3rem;
 }/*# sourceMappingURL=style.css.map */
